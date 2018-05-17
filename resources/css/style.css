@@ -1,0 +1,88 @@
+
+*{
+  font-family: 'Arimo', sans-serif;
+}
+
+body{
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* HEADER */
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo_and_title{
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  height: 32px;
+  font-size: 20px;
+}
+
+header ul{
+  padding-right: 24px;
+}
+
+header li{
+  display: inline-block;
+  padding-left: 16px;
+  opacity: 0.7;
+}
+
+#transparent{
+  opacity: 0.7;
+  padding-left: 1px;
+}
+
+/* BANNER */
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  background-color: lightgrey;
+}
+
+.banner_img_container{
+  width: 60%;
+}
+
+.banner img{
+  width: 100%;
+  padding: 32px 24px;
+}
+
+.banner_txt_column{
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.banner_txt_column h1{
+  font-weight: 700;
+  font-size: 40px;
+  opacity: 0.7;
+}
+
+.banner_txt_column h2{
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-weight: lighter;
+  font-size: 22px;
+  opacity: 0.7;
+}
+
+button{
+  background-color: #4d4d4d;
+  padding: 12px 0;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+}
