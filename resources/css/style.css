@@ -164,7 +164,7 @@ button{
   flex-direction: row;
   width: 100%;
   margin: auto;
-  border: 1px solid #e6e9ef;
+  border-bottom: 1px solid #e6e9ef;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
@@ -178,6 +178,7 @@ button{
 
 .wrapper{
   background-color: #e6e9ef;
+  border: 1px solid #e6e9ef;
   width: 1024px;
   margin: 0 auto;
 }
@@ -193,6 +194,7 @@ button{
   grid-row-gap: 0;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
+  padding-bottom: 32px;
 }
 
 #head{
@@ -230,4 +232,28 @@ button{
 .bottom{
   padding-top: 32px;
   }
+}
+
+/* VIDEO AREA */
+
+.thesis {
+  width: 1024px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  border: 1px solid #e6e9ef;
+}
+
+.thesis_left_column{
+  width: 60%;
+}
+
+video{
+  width: 100%;
+}
+
+.thesis_right_column{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
