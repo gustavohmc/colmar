@@ -236,24 +236,7 @@ button{
 
 /* VIDEO AREA */
 
-.thesis {
-  width: 1024px;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  border: 1px solid #e6e9ef;
-}
 
-.thesis_left_column{
-  width: 60%;
-}
-
-video{
-  width: 100%;
-}
-
-.thesis_right_column{
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+#thesis{
+  display: block;
 }
