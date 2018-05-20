@@ -47,8 +47,8 @@ header li{
   display: flex;
   width: 100%;
   flex-direction: row;
-  background-color: lightgrey;
-  border: 1px solid lightgrey;
+  background-color: #e6e9ef;
+  border: 1px solid #e6e9ef;
 }
 
 .banner_img_container{
@@ -97,7 +97,7 @@ button{
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  border: 1px solid lightgrey;
+  border: 1px solid #e6e9ef;
 }
 
 .intro_column_left{
@@ -164,12 +164,70 @@ button{
   flex-direction: row;
   width: 100%;
   margin: auto;
-  border: 1px solid lightgrey;
+  border: 1px solid #e6e9ef;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
 }
 
 .lecture{
-  background-color: lightgrey;
+  background-color: #e6e9ef;
+}
+
+/* LEARNING AREA WITH 6 IMAGES AND TEXT USING GRID */
+
+.wrapper{
+  background-color: #e6e9ef;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.learning{
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #e6e9ef;
+  display: grid;
+  grid-auto-flow: row;
+  grid-column-gap: 32px;
+  grid-row-gap: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+#head{
+  grid-column: 1/4;
+  text-align: center;
+  padding: 32px;
+  opacity: 0.7;
+}
+
+.learning img{
+  width: 100%;
+}
+
+.engineering,
+.art,
+.design,
+.data,
+.business,
+.marketing{
+  background-color: white;
+  padding: 0px 16px;
+  opacity: 0.7;
+}
+
+.engineering p,
+.art p,
+.design p,
+.data p,
+.business p,
+.marketing p{
+  margin-top: -8px;
+  font-size: 14px;
+}
+
+.bottom{
+  padding-top: 32px;
+  }
 }
