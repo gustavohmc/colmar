@@ -8,6 +8,13 @@ body{
   margin: auto;
 }
 
+h1,
+h2,
+h3{
+  font-family: 'Work Sans';
+
+}
+
 /* HEADER */
 
 header{
@@ -97,7 +104,8 @@ button{
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  border: 1px solid #e6e9ef;
+  border-left: 1px solid #e6e9ef;
+  border-right: 1px solid #e6e9ef;
 }
 
 .intro_column_left{
@@ -155,6 +163,7 @@ button{
 .lecture_txt{
   width: 65%;
   text-align: center;
+  opacity: 0.7;
 }
 
 .orientation,
@@ -231,12 +240,60 @@ button{
 
 .bottom{
   padding-top: 32px;
-  }
 }
 
 /* VIDEO AREA */
 
 
-#thesis{
+.thesis{
+  width: 100%;
   display: block;
+  border-left: 1px solid #e6e9ef;
+  border-right: 1px solid #e6e9ef;
+  border-top: 1px solid #e6e9ef;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.thesis h1{
+  text-align: center;
+  opacity: 0.7;
+  padding-top: 1rem;
+}
+
+#thesis_right{
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  width: 40%;
+  font-size: 12px;
+}
+
+#thesis_right img{
+  padding: 16px;
+  width: 100%;
+}
+
+/* FOOTER */
+
+footer{
+  font-size: 12px;
+  border: 1px solid #e6e9ef;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer p{
+  float: left;
+  padding: 24px;
+  opacity: 0.7;
+}
+
+footer li{
+  text-decoration: none;
+  display: inline;
+  float: right;
+  padding: 24px;
+  opacity: 0.7;
 }
