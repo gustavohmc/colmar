@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <header>
+    <header class="desktop">
       <div class="logo_and_title">
         <img src="./resources/images/ic-logo.svg" alt="Colmar academy logo">
         <span><strong>COLMAR</strong></span>
@@ -24,6 +24,13 @@
         </ul>
       </div>
 
+    </header>
+
+    <header id="mobileHeader">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo">
+      <img src="./resources/images/ic-on-campus.svg" alt="desk icon">
+      <img src="./resources/images/ic-online.svg" alt="computer icon">
+      <img src="./resources/images/ic-login.svg" alt="person icon">
     </header>
 
     <!-- MAIN BANNER SECTION -->
@@ -59,19 +66,22 @@
       <div class="intro_column_right">
         <div class="orientation">
           <div class="orientation_img">
-            <img src="./resources/images/information-orientation.jpg" alt="students seen from above">
+            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="students seen from above">
+            <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="students seen from above">
           </div><!--ORIENTATION_IMG-->
 
           <div class="orientation_txt">
               <h3>Orientation date</h3>
-              <p>Tue 10/11 and Wed 10/12:</br>8am-3pm</p>
+              <p class="desktop">Tue 10/11 and Wed 10/12:</br>8am-3pm</p>
+              <p class="mobile">Tue 10/11 and Wed 10/12: 8am-3pm</p>
               <a href="#">Read more</a>
           </div><!--ORIENTATION_TXT-->
         </div><!--ORIENTATION-->
 
         <div class="campus">
           <div class="campus_img">
-            <img src="./resources/images/information-campus.jpg" alt="photo of a study room">
+            <img class="desktop" src="./resources/images/information-campus.jpg" alt="photo of a study room">
+            <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="photo of a study room">
           </div><!--CAMPUS_IMG-->
 
           <div class="campus_txt">
@@ -83,12 +93,14 @@
 
         <div class="lecture">
           <div class="lecture_img">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="photo of the guest lecturer">
+            <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="photo of the guest lecturer">
+            <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="photo of the guest lecturer">
           </div><!--LECTURE_IMG-->
 
           <div class="lecture_txt">
             <h3>Our guest lecture</h3>
-            <p>Join a keynote with Oliver Sack</br> about music in medical treatment</p>
+            <p class="desktop">Join a keynote with Oliver Sack</br> about music in medical treatment</p>
+            <p class="mobile">Join a keynote with Oliver Sack about music in medical treatment</p>
             <a href="#">Read more</a>
           </div><!--LECTURE_TXT-->
         </div><!--LECTURE-->
@@ -97,10 +109,10 @@
 
     </div><!--INTRO-->
 
-    <!-- COURSES SECTION WITH PICTURES -->
-    <div class="wrapper">
+    <!-- COURSES SECTION WITH PICTURES: DESKTOP-->
+    <div class="wrapper desktop">
 
-      <div class="learning">
+      <div class="learning desktop">
         <div id="head"><h1>Start Learning</h1></div>
 
         <img src="./resources/images/course-software.jpg" alt="a desk with a desktop computer">
@@ -150,6 +162,24 @@
       </div><!--LEARNING-->
     </div><!--WRAPPER-->
 
+    <!-- COURSES SECTION: MOBILE VERSION WITHOUT PICS-->
+
+    <div class="courses_mobile_wrapper mobile">
+      <div class="courses_mobile_title mobile">
+        <h1>Start Learning</h1>
+      </div><!--COURSES MOBLE TITLE-->
+
+      <div class="courses_mobile mobile">
+        <h3>Software Engineering</h3>
+        <h3>Computer Art</h3>
+        <h3>Design</h3>
+        <h3>Data</h3>
+        <h3>Business</h3>
+        <h3>Marketing</h3>
+      </div><!--COURSES MOBILE-->
+
+    </div><!--COURSES MOBILE WRAPPER-->
+
     <!-- THESIS SECTION WITH VIDEO -->
 
     <div class="thesis">
@@ -157,12 +187,12 @@
     </div>
 
     <div class="intro">
-      <div class="intro_column_left">
+      <div class="intro_column_left special">
         <div class="intro_img">
           <video width="100%" src="./resources/videos/thesis.mp4" controls autoplay type = "video/mp4">Your browser does not support this video</video>
         </div><!--INTRO IMG-->
 
-        <div class="intro_txt">
+        <div class="intro_txt desktop">
           <h2>Reimagine Urban</h2>
           <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."" </p>
         </div><!--INTRO TXT-->
